@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+/data/raw/Jasechko_et_al_2024_AquiferSpatialData.zip
+/data/raw/*.part

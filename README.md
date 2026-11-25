@@ -26,14 +26,14 @@ python scripts/prepare_data.py
 python scripts/plot_figures.py
 ```
 
-The download script checks local inputs against their SHA-256 hashes and retrieves missing originals. The preparation script extracts the source tables and boundary records. The plotting script writes the PNG, PDF, and SVG versions into `figures/`. The workflow reproduces the essay figures from author-published source data.
+The download script checks local inputs against their SHA-256 hashes and restores missing originals from bundled parts or the pinned upstream downloads. The preparation script extracts the source tables and boundary records. The plotting script writes the PNG, PDF, and SVG versions into `figures/`. The workflow reproduces the essay figures from author-published source data.
 
 ## Repository layout
 
 | Path | Contents |
 | --- | --- |
 | [`paper/`](paper/) | Public PDF of the course paper |
-| [`data/raw/`](data/raw/) | Source archive notes and upstream access |
+| [`data/raw/`](data/raw/) | Original inputs, archive parts, and upstream links |
 | [`data/processed/`](data/processed/) | Figure-ready CSV and GeoJSON |
 | [`data/sources.json`](data/sources.json) | Pinned URLs, licenses, and SHA-256 hashes |
 | [`scripts/`](scripts/) | Source download, data extraction, and plotting |

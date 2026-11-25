@@ -1,0 +1,34 @@
+[
+  {
+    "file": "GroundwaterNCP_open-v2.0.zip",
+    "record": "https://doi.org/10.5281/zenodo.17799537",
+    "download": "https://zenodo.org/api/records/17799537/files/YuanchengXu2718/GroundwaterNCP_open-v2.0.zip/content",
+    "license": "CC BY 4.0",
+    "sha256": "7ad97da9e032b40f36a023d2eb9c57d2e4b1364fc2d42a689120cbddfa3fe50f"
+  },
+  {
+    "file": "Jasechko_et_al_2024_AquiferSpatialData.zip",
+    "record": "https://doi.org/10.5281/zenodo.10003697",
+    "download": "https://zenodo.org/api/records/10003697/files/Jasechko_et_al_2024_AquiferSpatialData.zip/content",
+    "license": "CC BY 4.0",
+    "sha256": "780e52ee37c81396d582d6d2e516a839d512043215cea120928225ca889edcc4",
+    "bundled_parts": [
+      "Jasechko_et_al_2024_AquiferSpatialData.zip.part0",
+      "Jasechko_et_al_2024_AquiferSpatialData.zip.part1"
+    ]
+  },
+  {
+    "file": "Jasechko_et_al_2024_SupplementaryTables.zip",
+    "record": "https://doi.org/10.5281/zenodo.10003697",
+    "download": "https://zenodo.org/api/records/10003697/files/Jasechko_et_al_2024_SupplementaryTables.zip/content",
+    "license": "CC BY 4.0",
+    "sha256": "925443016dca53999bf05acdaa0a7a2a4921b5fc2c157017016f1da8d18f394b"
+  },
+  {
+    "file": "ne_10m_coastline.geojson",
+    "record": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-coastline/",
+    "download": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_coastline.geojson",
+    "license": "Public domain",
+    "sha256": "6f75ae0e0de157b14946e2255eb1f5486d9a13819032e26d4610852d296788f6"
+  }
+]

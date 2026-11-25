@@ -1,0 +1,11 @@
+map_id,aquifer_system,area_km2,monitoring_wells,median_theil_sen_depth_m_per_year,fraction_deepening,fraction_deepening_above_0_5_m_per_year
+1,Chowchilla Basin,600,118,1.02,0.89,0.65
+2,Madera Basin,1662,169,0.69,0.94,0.64
+3,Merced Basin,2101,429,0.4,0.96,0.42
+4,Turlock Basin,1425,405,0.17,0.91,0.11
+5,Cosumnes Basin,643,74,0.12,0.84,0.01
+6,Modesto Basin,1006,350,0.08,0.76,0.07
+7,Delta-Mendota Basin,2581,839,0.05,0.71,0.04
+8,East Contra Basin,384,350,0.02,0.76,0
+9,Tracy Basin,915,443,0.02,0.67,0.04
+10,Eastern San Joaquin Basin,3106,2482,-0.05,0.31,0.01
