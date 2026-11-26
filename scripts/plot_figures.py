@@ -23,12 +23,13 @@ mpl.rcParams.update({
     'text.color': TEXT, 'axes.labelcolor': TEXT, 'axes.edgecolor': '#7D8790',
     'axes.linewidth': 0.7, 'xtick.color': MUTED, 'ytick.color': MUTED,
     'xtick.major.size': 3, 'ytick.major.size': 3,
-    'svg.fonttype': 'none', 'pdf.fonttype': 42, 'savefig.facecolor': 'white'
+    'svg.fonttype': 'none', 'svg.hashsalt': 'lsgi1d03-groundwater', 'pdf.fonttype': 42, 'savefig.facecolor': 'white'
 })
 
 def export(fig, name):
     for fmt in ('png', 'pdf', 'svg'):
-        fig.savefig(OUT / f'{name}.{fmt}', dpi=450 if fmt == 'png' else None)
+        metadata = {'CreationDate': None} if fmt == 'pdf' else {'Date': None} if fmt == 'svg' else None
+        fig.savefig(OUT / f'{name}.{fmt}', dpi=450 if fmt == 'png' else None, metadata=metadata)
     plt.close(fig)
 
 def panel(ax, letter, title):
@@ -99,7 +100,7 @@ def north_china():
     d.bar(mdates.date2num(dates), annual['ncp_precipitation_mm'], width=250, color=highlights, zorder=2.5)
     d.set_ylim(0, 1010)
     d.yaxis.set_major_locator(MultipleLocator(250))
-    d.set_ylabel('North China Plain (mm yr⁻¹)')
+    d.set_ylabel('Precipitation (mm yr⁻¹)')
     d.annotate('2021  ·  838.5 mm', (datetime(2021, 1, 1), 838.5),
                xytext=(datetime(2024, 2, 1), 955), color='#136A74',
                fontsize=8.1, ha='right', va='center',
@@ -194,6 +195,11 @@ def california():
         label = f'{slope:.2f}'.replace('-', '−')
         bars.text(slope + .035 if slope >= 0 else .028, idx, label,
                   va='center', ha='left', fontsize=7.4, color=TEXT)
+    eastern = table.loc[table['aquifer_system'].eq('Eastern San Joaquin Basin')].iloc[0]
+    row = list(table.index).index(eastern.name)
+    percentage = eastern['fraction_deepening']
+    bars.text(.41, row, f'{percentage:.0%} had falling levels',
+              ha='left', va='center', fontsize=7.6, color=TEXT)
     fig.legend([Patch(facecolor=color,edgecolor='#665A4D',linewidth=.5) for _,_,color,_ in CATEGORIES],
                [name for _,_,_,name in CATEGORIES], frameon=False,
                loc='lower center', bbox_to_anchor=(.445, .035), ncol=4, fontsize=8.0,

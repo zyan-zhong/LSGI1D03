@@ -4,9 +4,9 @@ Course paper and figure replication materials for *Living on a Dynamic Earth* at
 
 ## Paper
 
-[Groundwater Depletion on a Dynamic Earth: Advances and Limits from GRACE Detection to Water-Security Decisions Since 2008](paper/LSGI1D03_Groundwater_Final_Essay.pdf)
+[Advances and Limitations in Linking GRACE-Based Groundwater Monitoring to Water-Security Decisions Since 2008](paper/LSGI1D03_Groundwater_Final_Essay.pdf)
 
-The paper uses GRACE and GRACE-FO to examine regional groundwater monitoring, evidence for depletion and recovery, and the local observations that support water-supply decisions.
+The essay traces satellite gravity monitoring since 2008, examines competing explanations for the North China Plain recovery, and uses California well records to show why an aquifer-wide trend can miss risks to households.
 
 ## Figures
 
